@@ -1,5 +1,4 @@
-
-= SixArm Ruby Gem: SecureToken
+= SixArm.com » Ruby » SecureToken gem to generate a strong random text string
 
 Author:: Joel Parker Henderson, joelparkerhenderson@gmail.com
 Copyright:: Copyright (c) 2006-2010 Joel Parker Henderson
