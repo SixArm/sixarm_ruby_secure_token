@@ -1,11 +1,11 @@
-# -*- encoding: utf-8 -*-
+# -*- coding: utf-8 -*-
 =begin rdoc
 
-= SixArm Ruby Gem » SecureToken
+= SixArm.com » Ruby » SecureToken gem to generate a strong random text string
 
 Author:: Joel Parker Henderson, joelparkerhenderson@gmail.com
-Copyright:: Copyright (c) 2006-2010 Joel Parker Henderson
-License:: Your choice of BSD, MIT, LGPL, or CreativeCommons Non-commercial Share Alike
+Copyright:: Copyright (c) 2006-2011 Joel Parker Henderson
+License:: See LICENSE.txt file
 
 SecureToken is a random text generator that is cryptographically secure.
 
@@ -16,7 +16,7 @@ This is useful for creating things like passwords, hash salt, and chaff.
   SecureToken.new => "kavzwbnxremyqlkw"
 
 This generates a 16-character token of all lowercase letters,
-using Ruby's securerandom methods.
+using secure random numbers.
 
 SecureToken is a string, so you can do any string methods on it.
 You can change how tokens are randomly created, however you want.
@@ -29,8 +29,15 @@ if it is not, then we require our sixarm_ruby_secure_random gem.
 
 =end
 
-
-if !defined?(SecureRandom) then require 'sixarm_ruby_secure_random' end
+if !defined?(SecureRandom)
+  begin
+    # First we will try to load the Ruby standard library
+    require 'securerandom'
+  rescue
+    # Second we will try to load our own SecureRandom gem library
+    require 'sixarm_ruby_secure_random' 
+  end
+end
 
 
 class SecureToken < String
