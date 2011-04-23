@@ -1,10 +1,11 @@
-= SixArm.com » Ruby » SecureToken to generate a cryptographic string that is web\
+= SixArm.com » Ruby » SecureToken to generate a cryptographic string that is web safe
 
 Author:: Joel Parker Henderson, joel@joelparkerhenderson.com
 Copyright:: Copyright (c) 2006-2011 Joel Parker Henderson
 License:: See LICENSE.txt file
 
 Secure random token generator to create strong secure text tokens.
+
 
 ==Example
 
