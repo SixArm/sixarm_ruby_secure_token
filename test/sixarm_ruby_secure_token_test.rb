@@ -1,5 +1,8 @@
+# -*- coding: utf-8 -*-
 require 'test/unit'
 require 'sixarm_ruby_secure_token'
+require 'simplecov'
+SimpleCov.start
 
 class Testing < Test::Unit::TestCase
 

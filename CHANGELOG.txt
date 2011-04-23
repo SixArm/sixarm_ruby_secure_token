@@ -1,0 +1,5 @@
+CHANGELOG
+
+2011-04-22 1.3.0 Update to 32 characters
+2011-04-21 1.2.2 End support for Ruby 1.8.6
+
