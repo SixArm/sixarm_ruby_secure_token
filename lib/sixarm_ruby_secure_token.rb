@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 =begin rdoc
-<<<<<<< HEAD
-Please see README.rdoc
+Please see README
 =end
 
 require 'securerandom'
