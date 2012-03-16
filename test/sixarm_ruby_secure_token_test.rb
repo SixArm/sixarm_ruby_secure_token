@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 require 'minitest/autorun'
-require 'sixarm_ruby_secure_token'
 require 'simplecov'
 SimpleCov.start
+require 'sixarm_ruby_secure_token'
 
 class Testing < Test::Unit::TestCase
 
