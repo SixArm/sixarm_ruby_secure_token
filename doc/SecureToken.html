@@ -2,17 +2,27 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <meta name="Content-Type" content="text/html; charset=utf-8" />
-<title>Class: SecureToken</title>
-<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
-<link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: SecureToken
+  
+    &mdash; Documentation by YARD 0.7.5
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
 
 <script type="text/javascript" charset="utf-8">
   relpath = '';
   if (relpath != '') relpath += '/';
 </script>
-<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
-<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
 
   </head>
   <body>
@@ -33,11 +43,14 @@
 </div>
 
       <div id="search">
-  <a id="class_list_link" href="#">Class List</a>
-  <a id="method_list_link" href="#">Method List</a>
-  <a id ="file_list_link" href="#">File List</a>
+  
+    <a id="class_list_link" href="#">Class List</a>
+  
+    <a id="method_list_link" href="#">Method List</a>
+  
+    <a id="file_list_link" href="#">File List</a>
+  
 </div>
-
       <div class="clear"></div>
     </div>
     
@@ -89,7 +102,7 @@
         <dt id="COUNT-constant" class="">COUNT =
           
         </dt>
-        <dd><pre class="code"><span class='int'>16</span></pre></dd>
+        <dd><pre class="code"><span class='int'>32</span></pre></dd>
       
         <dt id="CHARS-constant" class="">CHARS =
           
@@ -100,7 +113,10 @@
   
 
 
-  
+
+
+
+
 
   
     <h2>
@@ -128,9 +144,8 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-A new instance of SecureToken.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of SecureToken.</p>
 </div></span>
   
 </li>
@@ -152,30 +167,30 @@ A new instance of SecureToken.
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>
-A new instance of SecureToken
-</p>
+    
+<p>A new instance of SecureToken</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-48
-49
-50</pre>
+23
+24
+25</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_secure_token.rb', line 48</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_secure_token.rb', line 23</span>
 
-<span class='kw'>def</span> <span class='id initialize'>initialize</span>
-  <span class='kw'>super</span><span class='lparen'>(</span><span class='const'>Array</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='const'>COUNT</span><span class='rparen'>)</span><span class='lbrace'>{</span><span class='const'>CHARS</span><span class='lbracket'>[</span><span class='const'>SecureRandom</span><span class='period'>.</span><span class='id random_number'>random_number</span><span class='lparen'>(</span><span class='const'>CHARS</span><span class='period'>.</span><span class='id size'>size</span><span class='rparen'>)</span><span class='rbracket'>]</span><span class='rbrace'>}</span><span class='period'>.</span><span class='id join'>join</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='const'>Array</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='const'>COUNT</span><span class='rparen'>)</span><span class='lbrace'>{</span><span class='const'>CHARS</span><span class='lbracket'>[</span><span class='const'>SecureRandom</span><span class='period'>.</span><span class='id identifier rubyid_random_number'>random_number</span><span class='lparen'>(</span><span class='const'>CHARS</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span><span class='rparen'>)</span><span class='rbracket'>]</span><span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -188,9 +203,9 @@ A new instance of SecureToken
 </div>
     
     <div id="footer">
-  Generated on Sat Feb 12 16:22:31 2011 by 
+  Generated on Wed Mar 21 04:03:18 2012 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.6.4 (ruby-1.9.2).
+  0.7.5 (ruby-1.9.3).
 </div>
 
   </body>

@@ -9,6 +9,12 @@
 
 Secure random token generator to create strong secure text tokens.
 
+Example:
+
+    SecureToken.new 
+    #=> "kavzwbnxremyqlkwtxoimxzqpofmpove"
+
+
 For docs go to <http://sixarm.com/sixarm_ruby_secure_token/doc>
 
 Want to help? We're happy to get pull requests.
@@ -22,7 +28,7 @@ Install:
 
 Bundler:
 
-    gem "sixarm_ruby_secure_token", "~>1.3.0"
+    gem "sixarm_ruby_secure_token", "~>1.4.0"
 
 Require:
 
@@ -42,15 +48,7 @@ To install with high security:
     gem install sixarm_ruby_secure_token --test --trust-policy HighSecurity
 
 
-## Examples
-
-Require:
-
-    require "sixarm_ruby_secure_token"
-
-Usage:
-
-    SecureToken.new => "kavzwbnxremyqlkwtxoimxzqpofmpove"
+## Details
 
 This generates a 32-character token of all lowercase letters,
 using Ruby's securerandom methods.
@@ -61,9 +59,10 @@ You can change how tokens are randomly created, however you want.
 
 ## Changes
 
-* 2012-03-14 1.3.0 Update docs, tests
+* 2012-03-21 1.4.0 Upgrade for Ruby 1.9.3, minitest/spec, and improved docs.
 * 2011-04-22 1.3.0 Update to 32 characters
 * 2011-04-21 1.2.2 End support for Ruby 1.8.6
+
 
 ## License
 

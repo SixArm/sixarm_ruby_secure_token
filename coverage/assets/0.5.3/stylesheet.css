@@ -109,12 +109,12 @@ hr.space {background:#fff;color:#fff;visibility:hidden;}
 }
 
 a {
-  color: #600;
+  color: #333;
   text-decoration: none;
 }
 
 a:hover {
-  color: #900;
+  color: #000;
   text-decoration: underline;
 }
 
@@ -253,29 +253,8 @@ td {
   padding: 4px 8px;
 }
 
-.source_table td {
-  padding: 2px 8px;
-}
-
-
-.source_table {
-  overflow: auto;
-}
-
-.source_table table {
-  width: 95%;
-}
-
-.source_table thead td {
-  background-color: white;
-}
-
-.source_table thead th {
-  background-color: white;
-}
-
-.source_table td.hits {
-  text-align: right;
+td.strong {
+  font-weight: bold;
 }
 
 .source_table h3, .source_table h4 {
@@ -284,16 +263,60 @@ td {
   margin-bottom: 4px;
 }
 
-td pre {
+.source_table .header {
+  padding: 10px;
+}
+
+.source_table pre {
   margin: 0;
   padding: 0;
-  color: #222;
+  white-space: normal;
+}
+
+.source_table pre, .source_table code {
+  color: #000;
   font-family: "Monaco", "Inconsolata", "Consolas", monospace;
 }
 
-.line_number {
-  width: 20px;
+.source_table pre {
+  background-color: #333;
+}
+
+.source_table pre ol {
+  margin: 0px; 
+  padding: 0px;
+  margin-left: 45px;
+  font-size: 12px;
+  color: white;
+}
+
+.source_table pre li {
+  margin: 0px;
+  padding: 2px 6px;
+  border-left: 5px solid white;
+}
+
+.source_table pre li code {
+  white-space: pre;
+  white-space: pre-wrap;
+}
+
+.source_table pre .hits {
+  float: right;
+  margin-left: 10px;
+  padding: 2px 4px;
+  
+  background-color: #444;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#222), to(#666));
+  background: -moz-linear-gradient(#222, #666);
+  background: linear-gradient(#222, #666);
+  
+  color: white;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-size: 10px;
   font-weight: bold;
+  text-align: center;
+  border-radius: 6px;
 }
 
 #footer {
@@ -321,21 +344,40 @@ td pre {
 .yellow {
   color: #da0;
 }
-.hit.odd td {
-  background-color: #bbdbb6;
+.source_table .covered {
+  border-color: #090;
 }
-.hit.even td {
-  background-color: #cde1c9;
+.source_table .missed {
+  border-color: #900;
 }
-.miss.odd td {
-  background-color: #f19683;
+.source_table .never {
+  border-color: black;
 }
-.miss.even td {
-  background-color: #efb5a8;
+.source_table .skipped {
+  border-color: #fc0;
 }
-.never.odd td {
+
+.source_table .covered:nth-child(odd) {
+  background-color: #CDF2CD;
+}
+.source_table .covered:nth-child(even) {
+  background-color: #DBF2DB;
+}
+.source_table .missed:nth-child(odd) {
+  background-color: #F7C0C0;
+}
+.source_table .missed:nth-child(even) {
+  background-color: #F7CFCF;
+}
+.source_table .never:nth-child(odd) {
   background-color: #efefef;
 }
-.never.even td {
+.source_table .never:nth-child(even) {
   background-color: #f4f4f4;
+}
+.source_table .skipped:nth-child(odd) {
+  background-color: #FBF0C0;
+}
+.source_table .skipped:nth-child(even) {
+  background-color: #FBFfCf;
 }
