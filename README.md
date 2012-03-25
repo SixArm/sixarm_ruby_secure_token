@@ -1,6 +1,7 @@
 # SixArm.com » Ruby » <br> SecureToken to generate a cryptographic string that is web safe
 
-* Docs: <http://sixarm.com/sixarm_ruby_secure_token/doc>
+* Doc: <http://sixarm.com/sixarm_ruby_secure_token/doc>
+* Gem: <http://rubygems.org/gems/sixarm_ruby_secure_token>
 * Repo: <http://github.com/sixarm/sixarm_ruby_secure_token>
 * Email: Joel Parker Henderson, <joel@sixarm.com>
 
