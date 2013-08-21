@@ -1,4 +1,7 @@
-# SixArm.com » Ruby » <br> SecureToken to generate a cryptographic string that is web safe
+# SixArm.com » Ruby » <br> SecureToken to generate a random string
+
+[![Code Climate](https://codeclimate.com/github/SixArm/sixarm_ruby_secure_token.png)](https://codeclimate.com/github/SixArm/sixarm_ruby_secure_token)
+[![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_secure_token.png)](https://travis-ci.org/SixArm/sixarm_ruby_secure_token)
 
 * Doc: <http://sixarm.com/sixarm_ruby_secure_token/doc>
 * Gem: <http://rubygems.org/gems/sixarm_ruby_secure_token>
@@ -8,13 +11,25 @@
 
 ## Introduction
 
-Secure random token generator to create strong secure text tokens.
+This is a secure token generator that creates cryptographically-strong strings.
 
 Example:
 
-    SecureToken.new 
+    SecureToken.new  
     #=> "kavzwbnxremyqlkwtxoimxzqpofmpove"
 
+To customize the length and choices:
+
+    SecureToken.length = 8
+    SecureToken,choices = ['a','b','c']
+
+    SecureToken.new 
+    #=> 'acbbaccb'
+
+To use an enumeration #next method:
+
+    s = SecureToken.new
+    s.next  #=> 'bacbaacb'
 
 For docs go to <http://sixarm.com/sixarm_ruby_secure_token/doc>
 
@@ -29,7 +44,7 @@ Install:
 
 Bundler:
 
-    gem "sixarm_ruby_secure_token", "~>1.4.0"
+    gem "sixarm_ruby_secure_token", "~>2.1.0"
 
 Require:
 
@@ -60,6 +75,8 @@ You can change how tokens are randomly created, however you want.
 
 ## Changes
 
+* 2013-08-20 2.1.0 Add #next to enable using this as an enumeration.
+* 2013-08-18 2.0.0 Upgrade for Ruby 2.0.0; add .length and .choices methods.
 * 2012-03-21 1.4.0 Upgrade for Ruby 1.9.3, minitest/spec, and improved docs.
 * 2011-04-22 1.3.0 Update to 32 characters
 * 2011-04-21 1.2.2 End support for Ruby 1.8.6

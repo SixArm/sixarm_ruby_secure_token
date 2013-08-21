@@ -5,23 +5,34 @@ Please see README
 
 require 'securerandom'
 
-if !defined?(SecureRandom)
-  begin
-    # First we will try to load the Ruby standard library
-    require 'securerandom'
-  rescue
-    # Second we will try to load our own SecureRandom gem library
-    require 'sixarm_ruby_secure_random' 
-  end
-end
-
 class SecureToken < String
 
- COUNT = 32
- CHARS = ['a','b','c','d','e','f','g','h','j','k','m','n','p','r','s','t','u','v','w','x','y','z']
+  @@length = 32
 
- def initialize
-   super(Array.new(COUNT){CHARS[SecureRandom.random_number(CHARS.size)]}.join)
- end
+  def self.length
+    @@length
+  end
+
+  def self.length=(x)
+    @@length = x
+  end
+
+  @@choices = ['a','b','c','d','e','f','g','h','j','k','m','n','p','r','s','t','u','v','w','x','y','z']
+
+  def self.choices
+    @@choices
+  end
+
+  def self.choices=(x)
+    @@choices = x
+  end
+
+  def initialize
+    super(Array.new(@@length){@@choices[SecureRandom.random_number(@@choices.size)]}.join)
+  end
+
+  def next
+    SecureToken.new
+  end
 
 end
