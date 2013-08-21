@@ -16,20 +16,8 @@ This is a secure token generator that creates cryptographically-strong strings.
 Example:
 
     SecureToken.new  
-    #=> "kavzwbnxremyqlkwtxoimxzqpofmpove"
+    #=> "kavzwbnxremyqckwtxrumxzapmfmpwve"
 
-To customize the length and choices:
-
-    SecureToken.length = 8
-    SecureToken,choices = ['a','b','c']
-
-    SecureToken.new 
-    #=> 'acbbaccb'
-
-To use an enumeration #next method:
-
-    s = SecureToken.new
-    s.next  #=> 'bacbaacb'
 
 For docs go to <http://sixarm.com/sixarm_ruby_secure_token/doc>
 
@@ -66,11 +54,40 @@ To install with high security:
 
 ## Details
 
-This generates a 32-character token of all lowercase letters,
-using Ruby's securerandom methods.
+This generates a 32-character token of lowercase letters.
+
+This uses Ruby's SecureRandom methods for strong security.
 
 SecureToken is a string, so you can do any string methods on it.
-You can change how tokens are randomly created, however you want.
+
+You can change how tokens are randomly created by using cusomtization.
+
+
+## Customization
+
+To customize the choices:
+
+    SecureToken.choices = ['a','b','c']
+    SecureToken.new 
+    #=> "acbbaccbabcabcabbcabcabcdbbcabcb"
+
+To customize the length:
+
+    SecureToken.length = 8
+    SecureToken.new 
+    #=> "kavzwbnx"
+
+The default length is 32. 
+
+The default choices are the lowercase English letters 'a' to 'z', but omitting the letters 'i', 'l', 'o', 'q'. We omit these because our user testing shows these characters are often misunderstood by users.
+
+
+## Enumeration
+
+To use an enumeration #next method:
+
+    s = SecureToken.new
+    s.next  #=> 'bacbaacb'
 
 
 ## Changes
