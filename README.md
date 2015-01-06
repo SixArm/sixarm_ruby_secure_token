@@ -49,7 +49,7 @@ To enable high security for all our gems:
 
 To install with high security:
 
-    gem install sixarm_ruby_secure_token --test --trust-policy HighSecurity
+    gem install sixarm_ruby_secure_token --trust-policy HighSecurity
 
 
 ## Details
