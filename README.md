@@ -1,4 +1,4 @@
-# SixArm.com » Ruby » <br> SecureToken to generate a random string
+# Ruby » <br> SecureToken to generate a random string
 
 [![Code Climate](https://codeclimate.com/github/SixArm/sixarm_ruby_secure_token.png)](https://codeclimate.com/github/SixArm/sixarm_ruby_secure_token)
 [![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_secure_token.png)](https://travis-ci.org/SixArm/sixarm_ruby_secure_token)
