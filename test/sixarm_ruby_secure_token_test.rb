@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-require 'minitest/autorun'
+require "minitest/autorun"
 Minitest::Test ||= MiniTest::Unit::TestCase
-require 'simplecov'
+require "simplecov"
 SimpleCov.start
-require 'sixarm_ruby_secure_token'
+require "sixarm_ruby_secure_token"
 
 describe SecureToken do
 

@@ -3,7 +3,7 @@
 Please see README
 =end
 
-require 'securerandom'
+require "securerandom"
 
 class SecureToken < String
 
