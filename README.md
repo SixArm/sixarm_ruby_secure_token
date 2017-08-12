@@ -1,4 +1,4 @@
-SixArm.com → Ruby → <br> SecureToken to generate a random string
+# SixArm.com → Ruby → <br> SecureToken to generate a random string
 
 <!--HEADER-OPEN-->
 
