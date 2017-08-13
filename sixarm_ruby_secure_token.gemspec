@@ -3,7 +3,7 @@
 Gem::Specification.new do |s|
 
   s.name           = "sixarm_ruby_secure_token"
-  s.summary        = "SixArm.com » Ruby » SecureToken to generate a string that random, web-friendly, and user-friendly"
+  s.summary        = "SixArm.com → Ruby → SecureToken to generate a string that random, web-friendly, and user-friendly"
   s.description    = "SecureToken.new generates a new string suitable for security purposes."
   s.version        = "2.1.1"
 
