@@ -1,5 +1,6 @@
 # Changes
 
+* 2018-06-21 2.1.3 Update SimpleCov syntax; drop Coveralls
 * 2017-08-13 2.1.2 Update to Ruby 2.4, spdx licenses, rake test, etc.
 * 2015-07-07 2.1.1 Update gemspec to use file manifest
 * 2013-08-20 2.1.0 Add #next to enable using this as an enumeration
